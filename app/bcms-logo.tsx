@@ -15,7 +15,7 @@ export default function BCMSLogo(){
              alt="Logo"
              quality={100}
           />
-          <p className="text-[18px]">e-CSRM</p>
+          {/*<p className="text-[18px]">e-CSRM</p>*/}
         </div>
       );
 }

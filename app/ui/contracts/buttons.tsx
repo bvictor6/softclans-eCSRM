@@ -1,6 +1,6 @@
 import { PencilIcon, PlusIcon, TrashIcon, ViewfinderCircleIcon, EyeIcon, EyeDropperIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import { deleteContract } from '@/app/lib/actions';
+import { deleteContract } from '@/app/home/contracts/actions';
 
 export function CreateContract() {
   return (
