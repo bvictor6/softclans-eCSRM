@@ -2,6 +2,7 @@ import NavLinks from "./nav-links";
 import Link from "next/link";
 import BCMSLogo from "@/app/bcms-logo";
 import { PowerIcon } from "@heroicons/react/24/outline";
+import { signOut } from "@/auth";
 
 export default function SideNav(){
     return (
@@ -19,7 +20,7 @@ export default function SideNav(){
                 <div className="hidden h-auto w-full grow rounded-none bg-blue-600 md:block border-b border-black-700"></div>
                 {<form action={async () => {
                     'use server';
-                    //await signOut();
+                    await signOut();
                 }}>
                 <button className="flex h-[48px] w-full grow items-center justify-center gap-2 bg-blue-600 text-white p-3 text-sm font-medium hover:bg-black-600 hover:text-white md:flex-none md:justify-start md:p-2 md:px-3">
                     <PowerIcon className="w-6" />
